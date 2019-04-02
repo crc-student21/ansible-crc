@@ -1,5 +1,6 @@
 ---
--name: 'Create /etc/motd file'
+- name: 'Create /etc/motd file'
+ignore_errors: Yes
   template:
     src: "{{ role_path }}/templates/motd.j2"
     dest: '/etc/motd'
